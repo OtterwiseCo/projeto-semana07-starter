@@ -8,7 +8,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.1",
-    "parcel": "^2.0.1"
+    "@parcel/transformer-sass": "^2.2.1",
+    "parcel": "^2.2.1"
   }
 }
