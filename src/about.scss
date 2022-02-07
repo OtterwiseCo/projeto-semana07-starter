@@ -1,0 +1,112 @@
+@import '_variables', '_styles';
+
+p {
+  margin: 0;
+}
+
+.my-container {
+  margin-left: 16px;
+  margin-right: 16px;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 0px;
+  }
+}
+
+.about-me {
+  &-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    flex-direction: column;
+    padding-top: 93px;
+    @media (min-width: 768px) {
+      max-width: 448px;
+      margin-left: 142px;
+      padding-top: 0px;
+    }
+  }
+  &-title {
+    color: $textColor;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      margin-left: 140px;
+      margin-top: 0px;
+    }
+  }
+  &-description {
+    color: $textColor;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      margin-left: 140px;
+    }
+  }
+}
+
+.skills {
+  &-title {
+    text-align: center;
+    color: $textColor;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    @media (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
+  &-flex {
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 24px;
+      margin-left: 165px;
+      margin-right: 165px;
+      margin-top: 60px;
+    }
+  }
+  &-cards {
+    background-color: $cardBackground;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    @media (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+
+    &-img {
+      padding-left: 28.5px;
+      padding-top: 22.25px;
+    }
+    &-title {
+      color: $textColor;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+      padding-left: 16px;
+    }
+    &-description {
+      color: $textColor;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
+      padding: 0px 16px 16px 16px;
+    }
+  }
+}
