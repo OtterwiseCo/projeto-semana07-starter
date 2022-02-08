@@ -41,7 +41,8 @@ p {
     flex-direction: column;
     @media (min-width: 768px) {
       margin-left: 140px;
-      margin-top: 0px;
+      margin-top: 150px;
+      margin-right: 142px;
     }
   }
   &-description {
@@ -53,6 +54,8 @@ p {
     flex-direction: column;
     @media (min-width: 768px) {
       margin-left: 140px;
+      padding-right: 142px;
+      margin-bottom: 50px;
     }
   }
 }
