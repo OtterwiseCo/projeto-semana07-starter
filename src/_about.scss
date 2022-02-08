@@ -1,0 +1,138 @@
+@import "_variables", "_styles";
+
+.about {
+  padding: 93px 16px 64px 16px;
+  &-card {
+    color: white;
+    background-color: $cardColor;
+    padding: 16px;
+    border-radius: 8px;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 64px 142px 128px;
+      // gap: 32px;
+      max-width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: $backgroundColor;
+    }
+
+    &-img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      @media (min-width: 992px) {
+        max-width: 448px;
+        height: 547px;
+        margin-top: 64px;
+      }
+    }
+
+    &-content {
+      @media (min-width: 992px) {
+        padding-left: 90px;
+      }
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+      @media (min-width: 992px) {
+        font-size: 48px;
+        line-height: 57px;
+        font-weight: 500;
+        margin-bottom: 33px;
+        margin-top: 0px;
+      }
+    }
+    &-description {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.44px;
+      margin-bottom: 16px;
+      @media (min-width: 992px) {
+        font-family: "DM Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.44px;
+      }
+    }
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    max-width: 100%;
+  }
+  &__responsive,
+  &__html,
+  &__cooworking,
+  &__comunication,
+  &__pixel,
+  &__interaction {
+    background-color: #1c1e22;
+    padding: 16px;
+    margin: 24px 0;
+  }
+
+  @media (min-width: 992px) {
+    &__responsive,
+    &__html,
+    &__cooworking,
+    &__comunication,
+    &__pixel,
+    &__interaction {
+      background-color: #1c1e22;
+      padding: 16px;
+      margin: 24px 14px;
+      max-width: 354px;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.44px;
+    }
+  }
+}
+
+.first__container,
+.second__container {
+  @media (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.skills p {
+  color: #ffffff;
+}
+
+.skills__responsive--paragraph,
+.skills__html--paragraph,
+.skills__cooworking--paragraph,
+.skills__comunication--paragraph,
+.skills__pixel--paragraph,
+.skills__interaction--paragraph {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  @media (min-width: 992px) {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+  }
+}
