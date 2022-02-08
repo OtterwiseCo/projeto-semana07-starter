@@ -1,7 +1,8 @@
 body {
+  padding: 0;
   margin: 0;
   background-color: $backgroundColor;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 button {
@@ -44,7 +45,7 @@ a {
         position: relative;
         &:hover {
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             bottom: 0;
             left: 0;

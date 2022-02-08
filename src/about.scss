@@ -1,0 +1,130 @@
+@import "_variables", "_styles";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 93px 16.5px 64px 50px;
+  margin-left: 16.5px;
+  margin-right: 16.5px;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
+      gap: 140px;
+      height: 80vh;
+    }
+
+    &-card {
+      border-radius: 8px;
+      @media (min-width: 992px) {
+        margin-top: 20px;
+        max-width: 448px;
+      }
+
+      &-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        @media (min-width: 992px) {
+          min-width: 448px;
+        }
+      }
+    }
+  }
+  &-content-info {
+    @media (min-width: 992px) {
+      max-width: 593px;
+    }
+    &-title {
+      max-width: 329px;
+      font-family: inherit;
+      color: $linkColor;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: 0.25px;
+      @media (min-width: 992px) {
+        max-width: 593px;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 71px;
+        letter-spacing: -0.5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    &-text {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.44px;
+      color: $linkColor;
+      @media (min-width: 992px) {
+      }
+    }
+    &-textColor {
+      color: $primaryColor;
+    }
+  }
+  &-skills {
+    &-title {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      color: $linkColor;
+      text-align: center;
+      @media (min-width: 992px) {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.25px;
+      }
+    }
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      @media (min-width: 992px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      &-item {
+        background-color: $bgcolorSkills;
+        padding: 20px;
+        border-radius: 8px;
+        @media (min-width: 992px) {
+          max-width: 314px;
+        }
+
+        &-h4 {
+          font-family: inherit;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 0.15px;
+          color: $linkColor;
+          @media (min-width: 992px) {
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 40px;
+            letter-spacing: 0.25px;
+          }
+        }
+        &-p {
+          font-family: inherit;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.25px;
+          color: $linkColor;
+        }
+      }
+    }
+  }
+}
