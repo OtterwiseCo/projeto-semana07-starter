@@ -1,0 +1,123 @@
+@import "_variables", "_styles";
+
+.about {
+  padding: 93px 0px 0px 0px;
+  justify-content: center;
+  @media (min-width: 992px) {
+    padding: 57px 0px 0px 0px;
+
+  }
+
+  &-card {
+    color: white;
+    background-color: transparent;
+    padding: 16px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 140px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin: 64px 142px 128px 142px;
+      max-width: 1156px;
+    }
+
+    &-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        max-width: 448px;
+        max-height:547px;
+        align-items: center;
+      @media (min-width: 992px) {
+          
+        max-width: 448px;
+        max-height:547px;
+        
+      }
+    }
+    &-title {
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 40px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      letter-spacing: 0.25px;
+      @media (min-width: 992px) {
+        font-size: 60px;
+        line-height: 71px;
+        font-weight: 700;
+        margin-top: 0px;
+        letter-spacing: -0.5px;
+      }
+    }
+    &-description {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.44px;
+      margin-bottom: 16px;
+      font-weight: 400;
+
+      @media (min-width: 992px) {
+        margin-bottom: 23px;
+        margin-top: 0px;
+        
+      }
+    }
+  }
+}
+
+.my-skills {
+  color: $linkColor;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 992px) {
+    flex-direction: column;
+  }
+
+  &-title {
+    color: white;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    margin: 0px;
+    padding-bottom: 32px;
+    padding-top: 24px;
+
+    @media (min-width: 992px) {
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: 0.25px;
+      font-weight: 500;
+      max-width: 524px;
+    }
+  }
+}
+
+
+.card {
+  flex-direction: column;
+  padding: 16px;
+
+  &-title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 16.5px;
+  }
+
+  &-text {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
