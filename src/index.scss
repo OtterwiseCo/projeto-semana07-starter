@@ -1,105 +1,90 @@
-@import '_variables', '_styles';
-
-.my-info {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  @media (min-width: 992px) {
-    height: 90vh;
-  }
-
-  &-title {
-    color: white;
-    font-size: 34px;
-    line-height: 40px;
-    letter-spacing: 0.25px;
-    font-weight: 500;
-    max-width: 265px;
-    text-align: center;
-    margin-bottom: 24px;
-    @media (min-width: 992px) {
-      font-size: 60px;
-      line-height: 71px;
-      letter-spacing: -0.5px;
-      font-weight: 700;
-      max-width: 524px;
+    @import '_variables',
+    '_styles';
+    .my-info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        @media(min-width: 992px) {
+            height: 90vh;
+        }
+        &-title {
+            color: white;
+            font-size: 34px;
+            line-height: 40px;
+            letter-spacing: 0.25px;
+            font-weight: 500;
+            max-width: 265px;
+            text-align: center;
+            margin-bottom: 24px;
+            @media(min-width: 992px) {
+                font-size: 60px;
+                line-height: 71px;
+                letter-spacing: -0.5px;
+                font-weight: 700;
+                max-width: 524px;
+                margin-bottom: 32px;
+            }
+            &-name {
+                color: $primaryColor;
+            }
+        }
+        &-buttons {
+            flex-direction: column;
+            @media (min-width: 992px) {
+                flex-direction: row;
+                gap: 24px;
+            }
+        }
+        .button__solid {
+            margin-bottom: 16px;
+        }
     }
-
-    &-name {
-      color: $primaryColor;
+    
+    .about {
+        padding: 0 16px 64px 16px;
+        &-card {
+            color: white;
+            background-color: $cardColor;
+            padding: 16px;
+            border-radius: 8px;
+            flex-direction: column;
+            max-width: 967px;
+            margin-left: auto;
+            margin-right: auto;
+            @media(min-width: 992px) {
+                flex-direction: row;
+                gap: 32px;
+            }
+            &-img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                @media(min-width: 992px) {
+                    max-width: 326px;
+                }
+            }
+            &-title {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                margin-top: 24px;
+                margin-bottom: 16px;
+                @media(min-width: 992px) {
+                    font-size: 48px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    margin-top: 0;
+                }
+            }
+            &-description {
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.44px;
+                margin-bottom: 16px;
+                @media(min-width: 992px) {
+                    margin-bottom: 24px;
+                }
+            }
+        }
     }
-  }
-
-  &-buttons {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    @media (min-width: 992px) {
-      flex-direction: row;
-      gap: 24px;
-    }
-  }
-  .button__solid {
-    margin-bottom: 16px;
-
-    @media (min-width: 992px) {
-      margin-bottom: 0;
-    }
-  }
-
-  .button__outlined {
-    width: fit-content;
-  }
-}
-
-.about {
-  padding: 0 16px 64px 16px;
-  &-card {
-    color: white;
-    background-color: $cardColor;
-    padding: 16px;
-    border-radius: 8px;
-    flex-direction: column;
-    @media (min-width: 992px) {
-      flex-direction: row;
-      gap: 32px;
-      max-width: 927px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-    &-img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      @media (min-width: 992px) {
-        max-width: 326px;
-      }
-    }
-    &-title {
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 32px;
-      margin-top: 24px;
-      margin-bottom: 16px;
-      @media (min-width: 992px) {
-        font-size: 48px;
-        line-height: 57px;
-        font-weight: 500;
-        margin-bottom: 33px;
-        margin-top: 0px;
-      }
-    }
-    &-description {
-      font-size: 16px;
-      line-height: 28px;
-      letter-spacing: 0.44px;
-      margin-bottom: 16px;
-      @media (min-width: 992px) {
-        margin-bottom: 23px;
-      }
-    }
-  }
-}
