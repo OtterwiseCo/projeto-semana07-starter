@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: $backgroundColor;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 button {
@@ -44,7 +44,7 @@ a {
         position: relative;
         &:hover {
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             bottom: 0;
             left: 0;
@@ -172,6 +172,26 @@ a {
       margin-right: 8px;
     }
   }
+
+  &__form {
+    padding: 16px 8px;
+    margin: 24px 18px 24px 24px;
+    width: 286px;
+    height: 48px;
+    left: 24px;
+    top: 474px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    @media (min-width: 992px) {
+     width: 399px;
+    height: 48px;
+    margin: 24px;
+      
+     }
+    
+  }
 }
 
 .container {
@@ -189,7 +209,6 @@ a {
   justify-content: space-between;
 }
 
-
 .skill-card {
   background-color: $skillColors;
   border-radius: 8px;
@@ -200,7 +219,6 @@ a {
     margin: 0px 24px 24px 0px;
   }
 }
-
 
 .first-threesome {
   flex-direction: column;
