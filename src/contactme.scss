@@ -1,0 +1,90 @@
+@import '_variables', '_styles';
+
+.contact {
+  display: flex;
+  margin-left: 16px;
+  margin-right: 16px;
+  flex-direction: column;
+
+  &-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  &-title {
+    margin-top: 92px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    color: $textColor;
+    text-align: center;
+  }
+  &-description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: $textColor;
+  }
+  &-card {
+    background-color: #26292d;
+    border-radius: 8px;
+    margin-bottom: 64px;
+    margin-top: 24px;
+    margin: 24px;
+    @media (min-width: 768px) {
+      max-width: 447;
+      max-height: auto;
+      margin: 215px;
+      margin-top: 44px;
+      margin-bottom: 128px;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.44px;
+      color: $textColor;
+      padding-left: 24px;
+      padding-top: 24px;
+    }
+    &-input {
+      margin-left: 24px;
+      margin-right: 24px;
+      background-color: $contactCardBG;
+      max-width: 280px;
+      height: 60px;
+      border-radius: 8px;
+      border: 1px solid #a0a0a1;
+      font-weight: 400;
+      letter-spacing: 0.44px;
+      font-size: 16px;
+      line-height: 28px;
+      color: $contactCardText;
+      padding-left: 20px;
+      @media (min-width: 768px) {
+        max-width: 100%;
+      }
+    }
+  }
+  &-button {
+    background-color: #5c62ec;
+    border-radius: 8px;
+    color: $textColor;
+    margin: 24px;
+    padding: 16px 120px 16px 120px;
+    @media (min-width: 768px) {
+      width: 85%;
+    }
+    @media (min-width: 1024px) {
+      width: 92%;
+    }
+  }
+}
+
+.message {
+  padding-bottom: 106px;
+}
