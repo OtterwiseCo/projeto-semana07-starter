@@ -11,10 +11,26 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles/contact.scss" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+    
     <title>Contact</title>
   </head>
   <body>
     <header>
+      <div class="container-menu-mobile">
+        <div class="navbar-links-menu-mobile">
+          <a class="navbar-links-menu-mobile-link" href="./index.html"
+            >Início</a
+          >
+          <a class="navbar-links-menu-mobile-link" href="./about.html"
+            >Sobre mim</a
+          >
+          <a class="navbar-links-menu-mobile-link" href="./contact.html"
+            >Contato</a
+          >
+        </div>
+      </div>
       <nav class="navbar flex space-between">
         <div class="container flex space-between">
           <svg
@@ -47,6 +63,25 @@
               />
             </svg>
           </button>
+
+          <button class="navbar-burger-x">
+            <svg
+              width="14"
+              height="16"
+              viewBox="0 0 14 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 2.12305L13 14.123L10.5 11.623L8 9.12305M1 14.123L13 1.87695"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
           <div class="navbar-links">
             <a class="navbar-links-link" href="./index.html">Início</a>
             <a class="navbar-links-link" href="./about.html">Sobre mim</a>
@@ -55,6 +90,18 @@
         </div>
       </nav>
     </header>
+
+    <div class="container-menu-mobile">
+      <div class="navbar-links-menu-mobile">
+        <a class="navbar-links-menu-mobile-link" href="./index.html">Início</a>
+        <a class="navbar-links-menu-mobile-link" href="./about.html"
+          >Sobre mim</a
+        >
+        <a class="navbar-links-menu-mobile-link" href="./contact.html"
+          >Contato</a
+        >
+      </div>
+    </div>
 
     <section class="my-contact flex">
       <h3 class="my-contact-title flex">Contato</h3>
@@ -117,13 +164,21 @@
               fill="white"
             />
           </svg>
-       <div class="footer-column flex">
+          <div class="footer-column flex">
             <a href="./index.html" class="footer-column-name">Início</a>
-            <a href="./about.html" class="footer-column-link"><p>Sobre Mim</p></a>
+            <a href="./about.html" class="footer-column-link"
+              ><p>Sobre Mim</p></a
+            >
           </div>
           <div class="footer-column">
-            <a href="./contact.html"> <p class="footer-column-name">Contato</p></a>
-            <a href="mailto:Christiangall92@icloud.com" class="footer-column-link">Email</a>
+            <a href="./contact.html">
+              <p class="footer-column-name">Contato</p></a
+            >
+            <a
+              href="mailto:Christiangall92@icloud.com"
+              class="footer-column-link"
+              >Email</a
+            >
           </div>
           <div class="footer-column">
             <p class="footer-column-name">Social</p>

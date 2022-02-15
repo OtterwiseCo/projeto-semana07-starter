@@ -1,12 +1,15 @@
 @import "_variables", "";
 
 
-.navbar-links {
-    display: flex;
+.navbar-links-menu-mobile {
+    display: none;
     gap: 40px;    
     flex-direction: column;
     margin-top: 89.5px;
     margin-left: 16px;
+    height: 781px;
+    width: 360px;
+    
     
 
 
@@ -20,4 +23,5 @@
       font-family: 'Roboto', sans-serif;
       
     }
+
 }

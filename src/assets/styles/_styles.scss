@@ -1,5 +1,6 @@
 body {
   margin: 0;
+
   background-color: $backgroundColor;
   font-family: "DM Sans", sans-serif;
 }
@@ -27,11 +28,16 @@ a {
   &-links {
     display: none;
   }
+  .navbar-burger-x {
+    display: none;
+  }
 
   @media (min-width: 992px) {
     .navbar-burger {
       display: none;
     }
+
+    
     .navbar-links {
       display: flex;
       gap: 23px;
@@ -185,12 +191,10 @@ a {
     line-height: 16px;
 
     @media (min-width: 992px) {
-     width: 399px;
-    height: 48px;
-    margin: 24px;
-      
-     }
-    
+      width: 399px;
+      height: 48px;
+      margin: 24px;
+    }
   }
 }
 
