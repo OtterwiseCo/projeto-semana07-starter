@@ -1,7 +1,8 @@
 body {
   margin: 0;
+
   background-color: $backgroundColor;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 button {
@@ -27,11 +28,16 @@ a {
   &-links {
     display: none;
   }
+  .navbar-burger-x {
+    display: none;
+  }
 
   @media (min-width: 992px) {
     .navbar-burger {
       display: none;
     }
+
+    
     .navbar-links {
       display: flex;
       gap: 23px;
@@ -44,7 +50,7 @@ a {
         position: relative;
         &:hover {
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             bottom: 0;
             left: 0;
@@ -172,6 +178,24 @@ a {
       margin-right: 8px;
     }
   }
+
+  &__form {
+    padding: 16px 8px;
+    margin: 24px 18px 24px 24px;
+    width: 286px;
+    height: 48px;
+    left: 24px;
+    top: 474px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    @media (min-width: 992px) {
+      width: 399px;
+      height: 48px;
+      margin: 24px;
+    }
+  }
 }
 
 .container {
@@ -187,4 +211,31 @@ a {
 
 .space-between {
   justify-content: space-between;
+}
+
+.skill-card {
+  background-color: $skillColors;
+  border-radius: 8px;
+  max-width: 330px;
+  max-height: 206px;
+  margin: 0px 15px 24px 15px;
+  @media (min-width: 992px) {
+    margin: 0px 24px 24px 0px;
+  }
+}
+
+.first-threesome {
+  flex-direction: column;
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
+}
+
+.second-threesome {
+  flex-direction: column;
+  margin-bottom: 64px;
+  @media (min-width: 992px) {
+    flex-direction: row;
+    margin-bottom: 104px;
+  }
 }

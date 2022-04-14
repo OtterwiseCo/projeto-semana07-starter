@@ -1,0 +1,27 @@
+@import "_variables", "";
+
+
+.navbar-links-menu-mobile {
+    display: none;
+    gap: 40px;    
+    flex-direction: column;
+    margin-top: 89.5px;
+    margin-left: 16px;
+    height: 781px;
+    width: 360px;
+    
+    
+
+
+    &-link {
+      color: white;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+      
+      
+      font-family: 'Roboto', sans-serif;
+      
+    }
+
+}
